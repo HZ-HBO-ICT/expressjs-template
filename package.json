@@ -5,8 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "./node_modules/nodemon/bin/nodemon.js start.js",
-    "dev win": "./node_modules/.bin/nodemon start.js"
+    "dev": "node ./node_modules/nodemon/bin/nodemon.js start.js"
   },
   "author": "",
   "license": "ISC",
