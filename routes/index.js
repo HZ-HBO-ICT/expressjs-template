@@ -1,5 +1,5 @@
 import express from 'express';
-import { responseExample, updateExample } from '../controllers/exampleController.js';
+import { responseExample, updateExample, responseByIdExample } from '../controllers/exampleController.js';
 import { checkName } from '../middleware/exampleMiddleware.js';
 const router = express.Router();
 
@@ -9,5 +9,6 @@ router.get('/', (req, res, next) => {
 });
 router.get('/example', checkName, responseExample);
 router.post('/example', checkName, updateExample);
+router.get('/example/:id', checkName, responseByIdExample);
 
 export default router;
